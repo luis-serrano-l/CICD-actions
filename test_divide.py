@@ -5,6 +5,7 @@ class TestDividir(unittest.TestCase):
         self.assertEqual(dividir(3, 2), 1.5)
         self.assertEqual(dividir(-1, 1), -1)
         self.assertEqual(dividir(22, 2), 11)
+        self.assertRaises(ZeroDivisionError, dividir, 1, 0)
 
 if __name__ == '__main__':
     unittest.main()
